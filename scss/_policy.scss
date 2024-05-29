@@ -5,20 +5,8 @@
         padding-bottom: 15px;
     }
 
-    .page-text {
-
-    }
-
     .page-section {
         padding-top: 20px;
-
-        .section-title {
-
-        }
-        
-        .section-text {
-
-        }
 
         .nested-list {
             .list-title {
@@ -32,8 +20,7 @@
 
 @media (max-width: 575.98px) {
     .policy {
-        padding: 0;
-        
+
         .page-title {
             padding-bottom: 0px;
             font-size: 30px;
