@@ -1103,9 +1103,6 @@
 }
 
 @media (max-width: 575.98px) {
-  .policy {
-    padding: 0;
-  }
   .policy .page-title {
     padding-bottom: 0px;
     font-size: 30px;
