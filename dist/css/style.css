@@ -997,6 +997,14 @@
   background-color: white;
   color: #0a3b7c;
 }
+.contact .policy-wrapper {
+  margin-top: 50px;
+  text-align: center;
+}
+.contact .policy-wrapper .policy-text {
+  margin-bottom: 0px;
+  font-size: 16px;
+}
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .contact .contact-wrapper {
@@ -1041,6 +1049,15 @@
   .contact .contact-wrapper .contact-info .btn-contact {
     max-width: 300px;
     font-size: 16px;
+  }
+  .contact .policy-wrapper {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .contact .policy-wrapper .policy-text {
+    margin-bottom: 0px;
+    font-size: 14px;
   }
 }
 .footer {
@@ -1092,6 +1109,17 @@
 .policy {
   padding: 50px 0px;
 }
+.policy .upper-policy {
+  margin-bottom: 50px;
+}
+.policy .upper-policy .upper-policy-group {
+  text-align: right;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.policy .upper-policy .upper-policy-group .upper-policy-text {
+  margin-bottom: 0px;
+}
 .policy .page-title {
   padding-bottom: 15px;
 }
@@ -1103,6 +1131,17 @@
 }
 
 @media (max-width: 575.98px) {
+  .policy .upper-policy {
+    margin-bottom: 50px;
+  }
+  .policy .upper-policy .upper-policy-group {
+    text-align: right;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .policy .upper-policy .upper-policy-group .upper-policy-text {
+    margin-bottom: 0px;
+  }
   .policy .page-title {
     padding-bottom: 0px;
     font-size: 30px;
