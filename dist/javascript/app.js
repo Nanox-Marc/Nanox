@@ -73,3 +73,16 @@ $(".hide-click").click(function(){
   $("#mobileDisplay").toggleClass("active");
   // $("#mobileLogo").toggleClass("visible");
 });
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      const offset = 90; // Adjust this value as needed
+      window.scrollTo({
+          top: target.offsetTop - offset,
+          behavior: 'smooth'
+      });
+  });
+});

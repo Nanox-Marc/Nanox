@@ -874,50 +874,32 @@
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .recognition .section-title {
-    line-height: 40px;
-    margin-bottom: 15px;
-  }
-  .recognition .section-subtitle {
-    max-width: 100%;
-  }
-  .recognition .recognition-wrapper {
+  .items .items-wrapper {
     flex-wrap: wrap;
   }
-  .recognition .recognition-wrapper .image-wrapper {
-    margin-bottom: 20px;
-    margin-right: 30px;
+  .items .items-wrapper .item-holder {
+    width: 40%;
+    max-width: 40%;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .recognition .section-title {
-    line-height: 40px;
-    margin-bottom: 15px;
-  }
-  .recognition .section-subtitle {
-    max-width: 100%;
-  }
-  .recognition .recognition-wrapper {
+  .items .items-wrapper {
     flex-wrap: wrap;
   }
-  .recognition .recognition-wrapper .image-wrapper {
-    margin-bottom: 20px;
+  .items .items-wrapper .item-holder {
+    width: 40%;
+    max-width: 40%;
+    height: 400px;
   }
 }
 @media (max-width: 575.98px) {
-  .recognition .section-title {
-    line-height: 30px;
-    margin-bottom: 15px;
-    font-size: 25px;
-  }
-  .recognition .section-subtitle {
-    max-width: 100%;
-  }
-  .recognition .recognition-wrapper {
+  .items .items-wrapper {
     flex-wrap: wrap;
   }
-  .recognition .recognition-wrapper .image-wrapper {
-    margin-bottom: 20px;
+  .items .items-wrapper .item-holder {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 }
 .recognition {
