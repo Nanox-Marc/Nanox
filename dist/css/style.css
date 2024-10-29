@@ -893,6 +893,15 @@
   }
 }
 @media (max-width: 575.98px) {
+  .items .section-subtitle {
+    max-width: 100%;
+    font-size: 17px;
+  }
+  .items .section-title {
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
   .items .items-wrapper {
     flex-wrap: wrap;
   }
