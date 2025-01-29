@@ -44,8 +44,8 @@
                 }
                 .address-text {
                     margin: 0px;
-                    font-size: 18px;
-                    line-height: 25px;
+                    font-size: 16px;
+                    line-height: 23px;
                     color: #5A6D7E;
                 }
 
@@ -59,7 +59,32 @@
                 }
                 .email-text {
                     margin: 0px;
-                    font-size: 18px;
+                    font-size: 16px;
+                    line-height: 23px;
+                    color: #5A6D7E;
+                }
+
+                .contact-btn-group {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 5px;
+                }
+
+                .bh-group {
+                    margin-left: 15px;
+                }
+
+                .bt-title {
+                    padding-top: 30px;
+                }
+
+                .bh-text {
+                    padding-bottom: 8px;
+                }
+
+                .bh-text-info {
+                    margin: 0px;
+                    font-size: 15px;
                     line-height: 25px;
                     color: #5A6D7E;
                 }
@@ -76,11 +101,12 @@
 
             .btn-contact {
                 width: 100%;
-                max-width: 300px;
-                font-size: 18px;
+                margin-right: 10px;
+                // max-width: 300px;
+                font-size: 14px;
                 text-transform: uppercase;
                 color: #fff;
-                background-color: #0a3b7c;
+                background-color: #40526b;
                 border-color: #0a3b7c;
                 margin-bottom: 10px;
 
