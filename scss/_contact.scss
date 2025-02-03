@@ -6,7 +6,7 @@
     .title-group {
         display: flex;
         justify-content: center;
-        margin-bottom: 15px;
+        // margin-bottom: 15px;
 
         .content-wrapper {
             .section-title {
@@ -19,7 +19,7 @@
             .title-border {
                 width: 70px;
                 border: solid 2px #0a3b7c;
-                margin-bottom: 15px;
+                margin-bottom: 10px;
             }
         }     
     }
@@ -123,7 +123,8 @@
     }
 
     .policy-wrapper {
-        margin-top: 50px;
+        // margin-top: 50px;
+        margin-bottom: 40px;
         text-align: center;
 
         .policy-text {
@@ -145,8 +146,14 @@
     .contact {
         .contact-wrapper {
             padding: 0px 0px;
+            flex-direction: column;
 
             .contact-address {
+                max-width: 90%;
+                text-align: center;
+                margin: 0 auto;
+                margin-bottom: 30px;
+
                 .address-group {
                     .address-text {
                         font-size: 16px;
@@ -155,7 +162,8 @@
             }
 
             .contact-info {
-                align-items: flex-end;
+                align-items: center;
+                max-width: 100%;
 
                 .btn-contact {
                     max-width: 200px;
@@ -175,13 +183,21 @@
             .contact-address {
                 max-width: 100%;
                 margin-bottom: 30px;
+                padding: 0 30px;
                 
                 .address-group {
-                    width: 100%;
-                    max-width: 300px;
+                    // width: 100%;
+                    // max-width: 400px;
 
                     .address-text {
                         font-size: 16px;
+                    }
+
+                    .contact-btn-group {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 10px;
+                        flex-direction: column;
                     }
                 }
             }
@@ -198,8 +214,8 @@
         }
 
         .policy-wrapper {
-            margin-top: 50px;
-            margin-bottom: 30px;
+            margin-top: 0px;
+            margin-bottom: 50px;
             text-align: center;
     
             .policy-text {

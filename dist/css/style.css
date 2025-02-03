@@ -1030,7 +1030,6 @@
 .contact .title-group {
   display: flex;
   justify-content: center;
-  margin-bottom: 15px;
 }
 .contact .title-group .content-wrapper .section-title {
   margin: 0px;
@@ -1041,7 +1040,7 @@
 .contact .title-group .content-wrapper .title-border {
   width: 70px;
   border: solid 2px #0a3b7c;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .contact .contact-wrapper {
   display: flex;
@@ -1126,7 +1125,7 @@
   color: #0a3b7c;
 }
 .contact .policy-wrapper {
-  margin-top: 50px;
+  margin-bottom: 40px;
   text-align: center;
 }
 .contact .policy-wrapper .policy-text {
@@ -1142,12 +1141,20 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
   .contact .contact-wrapper {
     padding: 0px 0px;
+    flex-direction: column;
+  }
+  .contact .contact-wrapper .contact-address {
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
   .contact .contact-wrapper .contact-address .address-group .address-text {
     font-size: 16px;
   }
   .contact .contact-wrapper .contact-info {
-    align-items: flex-end;
+    align-items: center;
+    max-width: 100%;
   }
   .contact .contact-wrapper .contact-info .btn-contact {
     max-width: 200px;
@@ -1162,13 +1169,16 @@
   .contact .contact-wrapper .contact-address {
     max-width: 100%;
     margin-bottom: 30px;
-  }
-  .contact .contact-wrapper .contact-address .address-group {
-    width: 100%;
-    max-width: 300px;
+    padding: 0 30px;
   }
   .contact .contact-wrapper .contact-address .address-group .address-text {
     font-size: 16px;
+  }
+  .contact .contact-wrapper .contact-address .address-group .contact-btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-direction: column;
   }
   .contact .contact-wrapper .contact-info {
     align-items: center;
@@ -1179,8 +1189,8 @@
     font-size: 16px;
   }
   .contact .policy-wrapper {
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-bottom: 50px;
     text-align: center;
   }
   .contact .policy-wrapper .policy-text {
