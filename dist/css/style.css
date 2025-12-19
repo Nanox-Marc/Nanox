@@ -1248,7 +1248,50 @@
   padding: 50px 0px;
 }
 .policy .upper-policy {
-  margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.policy .upper-policy .policy-info {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 40px;
+}
+
+.policy .upper-policy .upper-policy-group.left-group {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.policy .upper-policy .upper-policy-group.left-group .upper-policy-text {
+    margin-bottom: 0px;
+    line-height: 1.6;
+}
+
+.policy .upper-policy .privacy-seal-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    min-width: 200px;
+}
+
+.policy .upper-policy .privacy-seal {
+    width: 180px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    /* box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2); */
+    /* border-radius: 8px; */
+    margin-right: 50%;
+}
+
+.policy .upper-policy .privacy-seal:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 .policy .upper-policy .upper-policy-group {
   text-align: right;
@@ -1268,6 +1311,132 @@
   padding-top: 10px;
 }
 
+/* Modal styling for expanded image */
+.modal-content {
+    background: transparent;
+    border: none;
+}
+
+.modal-body {
+    padding: 20px;
+    position: relative;
+}
+
+.modal-body .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 1000;
+    color: white;
+    opacity: 0.8;
+    font-size: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-body .close:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.expanded-image {
+    max-width: 100%;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .policy .upper-policy {
+        flex-direction: column;
+    }
+    
+    .policy .upper-policy .policy-info {
+        margin-right: 0;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    
+    .policy .upper-policy .privacy-seal-container {
+        justify-content: flex-start;
+        width: 100%;
+    }
+    
+    .policy .upper-policy .privacy-seal {
+        width: 160px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .policy .upper-policy {
+        flex-direction: column;
+    }
+    
+    .policy .upper-policy .policy-info {
+        margin-right: 0;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    
+    .policy .upper-policy .upper-policy-group.left-group {
+        font-size: 16px;
+    }
+    
+    .policy .upper-policy .privacy-seal-container {
+        justify-content: flex-start;
+        width: 100%;
+    }
+    
+    .policy .upper-policy .privacy-seal {
+        width: 150px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .policy .upper-policy {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    
+    .policy .upper-policy .policy-info {
+        margin-right: 0;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    
+    .policy .upper-policy .upper-policy-group.left-group {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    
+    .policy .upper-policy .privacy-seal-container {
+        justify-content: flex-start;
+        width: 100%;
+    }
+    
+    .policy .upper-policy .privacy-seal {
+        width: 140px;
+    }
+    
+    .modal-body {
+        padding: 15px;
+    }
+    
+    .modal-body .close {
+        top: 5px;
+        right: 10px;
+        font-size: 25px;
+        width: 35px;
+        height: 35px;
+    }
+}
 @media (max-width: 575.98px) {
   .policy .upper-policy {
     margin-bottom: 50px;

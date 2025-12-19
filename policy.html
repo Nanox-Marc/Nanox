@@ -103,18 +103,43 @@
     <div class="policy">
         <div class="container">
             <div class="upper-policy">
-                <div class="upper-policy-group">
-                    <p class="upper-policy-text">Enactment date: March 18, 2019</p>
-                    <p class="upper-policy-text">Revision date: June 18, 2024</p>
-                    <p class="upper-policy-text">Reference: Data Privacy Policy (CHHR-P-023)</p>
+                <!-- Left side - Policy info -->
+                <div class="policy-info">
+                    <div class="upper-policy-group left-group">
+                        <p class="upper-policy-text">Enactment date: March 18, 2019</p>
+                        <!-- <p class="upper-policy-text">Revision date: December 15, 2025</p> -->
+                        <p class="upper-policy-text">Reference: Data Privacy Policy (NPI-CM-PR-001)</p>
+                    </div>
+                    <div class="upper-policy-group left-group">
+                        <p class="upper-policy-text">Nanox Philippines Inc.</p>
+                        <p class="upper-policy-text">Yoshihiro Fukuda</p>
+                        <p class="upper-policy-text">President</p>
+                    </div>
                 </div>
-                <div class="upper-policy-group">
-                    <p class="upper-policy-text">Nanox Philippines Inc.</p>
-                    <p class="upper-policy-text">Yoshihiro Fukuda</p>
-                    <p class="upper-policy-text">President</p>
+                
+                <!-- Right side - Privacy Seal image -->
+                <div class="privacy-seal-container">
+                    <img src="./dist/assets/PrivacySeal.png" 
+                        alt="Privacy Seal" 
+                        class="privacy-seal"
+                        id="privacySeal">
                 </div>
             </div>
-            
+            <!-- this modal for expanded image view -->
+            <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-body text-center">
+                            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button> -->
+                            <img src="./dist/assets/PrivacySeal.png" 
+                                alt="Privacy Seal - Expanded View" 
+                                class="img-fluid expanded-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <p class="page-text">
                 Nanox Philippines Inc. is a manufacturing company creating value and delivering excellence in customer 
@@ -298,7 +323,7 @@
                         In accordance with Data Privacy Act of 2012, we are committed to upholding the rights of the data subject in relation to his/her personal information.
                     </li>
                     <li class="list-item">
-                        To exercise your right to access, rectify, erase, or object to the processing of your personal data, you may reach us by contacting us via email to nxp.nbmarketing.zz@j-display.com.
+                        To exercise your right to access, rectify, erase, or object to the processing of your personal data, you may reach us by contacting us via email to nxp.dpo.zz@j-display.com or through DPO Direct Line (+63-45-598-5601).
                     </li>
                 </ul>               
             </div>
@@ -334,5 +359,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./dist/javascript/app.js"></script>  
+    <script>
+        // Privacy Seal image click handler
+        document.addEventListener('DOMContentLoaded', function() {
+            const privacySeal = document.getElementById('privacySeal');
+            
+            if (privacySeal) {
+                privacySeal.addEventListener('click', function() {
+                    $('#imageModal').modal('show');
+                });
+            }
+            
+            // Optional: Close modal on ESC key
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                    $('#imageModal').modal('hide');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
