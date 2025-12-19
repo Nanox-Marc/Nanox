@@ -1284,7 +1284,8 @@
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease;
-    border-radius: 8px;
+    /* box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2); */
+    /* border-radius: 8px; */
     margin-right: 50%;
 }
 
