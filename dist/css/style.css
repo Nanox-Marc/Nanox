@@ -1284,7 +1284,6 @@
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin-right: 50%;
 }
