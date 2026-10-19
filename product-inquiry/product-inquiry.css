@@ -1,7 +1,11 @@
 .product-inquiry-btn {
     /* Exact dimensions from .chat-logo */
-    width: 260px;
-    height: 48px;
+     display: inline-block;
+    width: 350px;
+    height: 50px;
+    line-height: 45px;
+    text-align: center;
+    text-decoration: none;  /* removes underline */
 
     /* Exact typography from .inquire_header */
     font-size: 18px;
@@ -45,6 +49,33 @@
     box-shadow: none;
     transition: none !important;
 }
+.pdf-links{
+    display:flex;
+    gap:180px;
+    margin-top:20px;
+    }
+.pdf-btn-right{
+    margin-left:130px;
+}
+.pdf-btn {
+   display: inline-block;
+    width: 350px;
+    height: 50px;
+    line-height: 45px;
+    text-align: center;
+    background: white;
+    color: #445875;
+    border: 2px solid #1f1f1f;
+    border-radius: 14px;
+    text-decoration: none;  /* removes underline */
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.pdf-btn:hover {
+    text-decoration: none;  /* keeps underline removed on hover */
+    background:lightblue;
+}
 
 /* Desktop hover — mirrors .chat-logo:hover expand + lift */
 @media (min-width: 769px) {
@@ -55,11 +86,35 @@
         color: #ffffff;
     }
 }
+@media (min-width: 769px) {
+    .pdf-links
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .pdf-btn
+    {
+        display: inline-block;
+        padding: 12px 20px;
+        text-align: center;
+        border: 2px solid #555;
+        border-radius: 12px;
+        background: #fff;
+        font-weight: 600;
+        line-height: 1.4;
+        text-decoration: none;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
 
 /* Mobile — exact .chat-logo mobile values */
 @media (max-width: 768px) {
-    .product-inquiry-btn {
-        width: 270px;
+    .product-inquiry-btn{
+        width: 350px;
         height: 48px;
         border-radius: 0.75rem;
         border: 3px solid #40526b;
@@ -97,6 +152,38 @@
         color: #ffffff !important;
     }
 }
+@media screen and (max-width: 768px) {
+
+    .pdf-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 90% !important;
+        max-width: 340px;
+        min-height: 80px;
+
+        margin: 0 auto;
+        padding: 12px 15px;
+
+        box-sizing: border-box;
+        text-align: center;
+
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.3;
+
+        white-space: normal;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+    .pdf-links{
+    display:flex;
+    gap:80px;
+    margin-top:20px;
+    }
+    }
 
 /* ── Product Inquiry CTA container ──────────────────────────── */
 /* Single wrapper rendered once, below .items-wrapper in #Items  */
@@ -421,3 +508,4 @@
         overflow-y: auto;
     }
 }
+
